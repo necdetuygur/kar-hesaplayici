@@ -15,9 +15,9 @@ const dream = () => {
   ls("maliyet", maliyet);
   const kar = (maliyet / fiyat) * (fiyat + fark) - maliyet;
   el("kar").value = kar.toFixed(2);
-  el("yontem").value = `${maliyet} ÷ ${fiyat} × ${
+  el("yontem").value = `${maliyet.toFixed(2)} ÷ ${fiyat.toFixed(2)} × ${(
     fiyat + fark
-  } - ${maliyet} = ${kar.toFixed(5)}`;
+  ).toFixed(2)} - ${maliyet.toFixed(2)} = ${kar.toFixed(5)}`;
 };
 
 window.addEventListener("load", () => {
