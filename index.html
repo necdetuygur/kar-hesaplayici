@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Kâr Hesaplayıcı</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="card text-white bg-dark mb-3 mt-3">
+            <div class="card-header"><b>Kâr Hesaplayıcı</b></div>
+            <div class="card-body">
+              <div class="input-group mb-3">
+                <span class="input-group-text title">Fark</span>
+                <input
+                  type="number"
+                  step=".01"
+                  class="form-control input"
+                  id="fark"
+                  value="0.01"
+                />
+                <span class="input-group-text">₺</span>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text title">Fiyat</span>
+                <input
+                  type="number"
+                  step=".01"
+                  class="form-control input"
+                  id="fiyat"
+                  value="19.00"
+                />
+                <span class="input-group-text">₺</span>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text title">Maliyet</span>
+                <input
+                  type="number"
+                  step=".01"
+                  class="form-control input"
+                  id="maliyet"
+                  value="1000"
+                />
+                <span class="input-group-text">₺</span>
+              </div>
+              <div class="input-group mb-3">
+                <input class="form-control input" id="yontem" />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text title">Kâr</span>
+                <input
+                  type="number"
+                  step=".01"
+                  class="form-control input"
+                  id="kar"
+                  readonly
+                />
+                <span class="input-group-text">₺</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+  </body>
+</html>

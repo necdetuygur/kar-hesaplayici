@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+body {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+*,
+* *,
+* * * {
+  font-family: Cairo, sans-serif;
+}
+
+.input-group {
+  border: 1px solid #001f3d;
+}
+
+.input-group-text {
+  background-color: #081118;
+  color: #fff;
+}
+
+.input-group-text.title {
+  width: 5rem;
+}
+
+.input,
+.input:focus,
+.input:hover {
+  background-color: #081118;
+  color: #fff;
+}
